@@ -6,7 +6,7 @@ import Auth from './views/Auth';
 import AuthContextProvider from './contexts/AuthContext';
 import Dashboard from './views/Dashbord';
 import ProtectedRoute from './components/routing/ProtectedRoute';
-import About from './views/About';
+import Home from './views/Home';
 import TaskContextProvider from './contexts/TaskContext';
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
               <Route exact path="/" component={Landing} />
               <Route exact path="/login" render={props => <Auth {...props} authRoute="login" />} />
               <Route exact path="/register" render={props => <Auth {...props} authRoute="register" />} />
+              <ProtectedRoute exact path="/home" component={Home} />
               <ProtectedRoute exact path="/dashboard" component={Dashboard} />
-              <ProtectedRoute exact path="/about" component={About} />
             </Switch>
           </Router>
         </TaskContextProvider>

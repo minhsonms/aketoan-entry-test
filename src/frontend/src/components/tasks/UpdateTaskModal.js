@@ -58,8 +58,8 @@ const UpdateTaskModal = () => {
           </Form.Group>
           <Form.Group>
             <Form.Control as="select" value={status} name="status" onChange={onChangeUpdatedTaskForm}>
-              <option value="false">dang lam</option>
-              <option value="true">da xong</option>
+              <option value="false">Doing</option>
+              <option value="true">Done</option>
             </Form.Control>
           </Form.Group>
         </Modal.Body>

@@ -25,6 +25,6 @@ const ActionButtons = ({ _id }) => {
   );
 };
 ActionButtons.propTypes = {
-  _id: PropTypes.func.isRequired,
+  _id: PropTypes.string.isRequired,
 };
 export default ActionButtons;

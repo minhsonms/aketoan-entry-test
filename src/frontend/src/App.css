@@ -70,18 +70,18 @@ button.post-button.btn:active {
 	position: fixed;
 	right: 3rem;
 	bottom: 3rem;
-	background: transparent;
+	background: rgb(4, 124, 90);
 	border: none;
 }
 
 .btn-floating:hover {
-	background: transparent;
+	background: rgb(50, 195, 84);
 }
 
 .btn-floating:focus,
 .btn-floating:active {
 	outline: none;
-	background: transparent;
+	background: rgb(4, 124, 90);
 	border: none;
 	box-shadow: none;
 }

@@ -33,7 +33,7 @@ const Dashboard = () => {
     setShowToast,
   } = useContext(TaskContext);
 
-  // Start: Get all tasks
+  //  Get all tasks
   useEffect(() => getTasks(), []);
 
   let body = null;
@@ -72,8 +72,8 @@ const Dashboard = () => {
 
         {/* Open Add Task Modal */}
         <OverlayTrigger placement="left" overlay={<Tooltip>Add a new thing to do</Tooltip>}>
-          <Button className="btn-floating" onClick={setShowAddTaskModal.bind(this, true)}>
-            <PlusCircleFilled />
+          <Button className="btn-floating">
+            <PlusCircleFilled onClick={setShowAddTaskModal.bind(this, true)} />
           </Button>
         </OverlayTrigger>
       </>

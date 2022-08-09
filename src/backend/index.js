@@ -92,8 +92,8 @@ const startServer = async () => {
     res.json(err);
   });
 
-  app.listen(process.env.PORT || 3002, () => {
-    console.info(`App is running at http://localhost:${process.env.PORT || 3002}`);
+  app.listen(process.env.PORT || 3000, () => {
+    console.info(`App is running at http://localhost:${process.env.PORT || 3000}`);
   });
 };
 

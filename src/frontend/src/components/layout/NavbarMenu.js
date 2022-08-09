@@ -26,11 +26,11 @@ const NavbarMenu = () => {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link className="font-weight-bolder text-white" to="/dashboard" as={Link}>
-              Dashboard
+            <Nav.Link className="font-weight-bolder text-white" to="/home" as={Link}>
+              Home
             </Nav.Link>
-            <Nav.Link className="font-weight-bolder text-white" to="/about" as={Link}>
-              About
+            <Nav.Link className="font-weight-bolder text-white" to="/dashboard" as={Link}>
+              Todo List
             </Nav.Link>
           </Nav>
 

@@ -50,7 +50,6 @@ const RegisterForm = () => {
     <>
       <Form className="my-4" onSubmit={register}>
         <AlertMessage info={alert} />
-
         <Form.Group>
           <Form.Control type="text" placeholder="Username" name="username" required value={username} onChange={onChangeRegisterForm} />
         </Form.Group>
