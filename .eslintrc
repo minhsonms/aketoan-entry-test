@@ -1,0 +1,63 @@
+{
+  "parser": "babel-eslint",
+
+  "extends": [
+    "airbnb",
+    "plugin:css-modules/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+
+  "plugins": ["css-modules", "prettier"],
+
+  "globals": {
+    "__DEV__": true
+  },
+
+  "env": {
+    "browser": true
+  },
+
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", { "packageDir": "." }],
+
+    "no-console": [
+      "warn",
+      {
+        "allow": ["warn", "error", "info"]
+      }
+    ],
+
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+
+    "react/prefer-stateless-function": "off",
+
+    "prettier/prettier": "error",
+    "jsx-a11y/alt-text": "off",
+    "react/no-array-index-key": "off",
+    "class-methods-use-this": "off",
+    "no-unused-vars": "warn",
+    "react/forbid-prop-types": "warn",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/interactive-supports-focus": "off",
+    "no-use-before-define": "off",
+    "css-modules/no-unused-class": "off",
+    "no-plusplus": "off",
+    "jsx-a11y/label-has-for": "off",
+    "no-nested-ternary": "off",
+    "react/jsx-no-target-blank": "off",
+    "prefer-destructuring": "off",
+    "react/no-access-state-in-setstate": "off",
+    "react/destructuring-assignment": "off"
+  },
+
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src"]
+      }
+    }
+  }
+}

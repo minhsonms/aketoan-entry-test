@@ -1,0 +1,49 @@
+POST http://localhost:3002/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "minhson123",
+    "password": "minhson"
+}
+###
+
+POST http://localhost:3002/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "minhson123",
+    "password": "minhson"
+}
+
+###
+
+POST http://localhost:3002/api/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmYwZjYzZWUyMDcwOTQxNGM5YThjZDgiLCJpYXQiOjE2NTk5NTg4NTl9.GEcuxUogKTMNyoOs-Nq8hHdgrNIOh55qNb7ub_4YjpY
+
+{
+    "title": "112",
+    "status": "true"
+}
+
+###
+
+GET http://localhost:3002/api/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmYwZjYzZWUyMDcwOTQxNGM5YThjZDgiLCJpYXQiOjE2NTk5NTg4NTl9.GEcuxUogKTMNyoOs-Nq8hHdgrNIOh55qNb7ub_4YjpY
+
+###
+
+PUT http://localhost:3002/api/tasks/62f0f263b6d2df34d822305f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmVlMjY0NTc1M2NkODNjZTg0Nzc1ZDkiLCJpYXQiOjE2NTk3NzQ1NTR9.vkVJt2U_e3Tl9xaxDMr1nemZWtKG9utZP_LnDPWfZN0
+
+{
+    "title": "chin",
+    "status": "false"
+}
+
+###
+
+DELETE http://localhost:3002/api/tasks/62f0f263b6d2df34d822305f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmVlMjY0NTc1M2NkODNjZTg0Nzc1ZDkiLCJpYXQiOjE2NTk3NzQ1NTR9.vkVJt2U_e3Tl9xaxDMr1nemZWtKG9utZP_LnDPWfZN0
+
