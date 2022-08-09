@@ -10,6 +10,7 @@
     "lint": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" src"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/polyfill": "^7.4.4",
     "antd": "^4.22.3",

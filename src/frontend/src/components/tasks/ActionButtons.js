@@ -1,8 +1,8 @@
+/* eslint-disable react/jsx-no-bind */
 import React, { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
-import editIcon from '../../assets/pencil.svg';
-import deleteIcon from '../../assets/trash.svg';
+import { DeleteTwoTone, ToolTwoTone } from '@ant-design/icons';
 import { TaskContext } from '../../contexts/TaskContext';
 
 const ActionButtons = ({ _id }) => {
@@ -16,10 +16,10 @@ const ActionButtons = ({ _id }) => {
   return (
     <>
       <Button className="post-button" onClick={chooseTask.bind(this, _id)}>
-        <img src={editIcon} alt="edit" width="24" height="24" />
+        <ToolTwoTone />
       </Button>
       <Button className="post-button" onClick={deleteTask.bind(this, _id)}>
-        <img src={deleteIcon} alt="delete" width="24" height="24" />
+        <DeleteTwoTone />
       </Button>
     </>
   );

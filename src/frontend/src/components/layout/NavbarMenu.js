@@ -3,8 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import React, { useContext } from 'react';
-import learnItLogo from '../../assets/logo.svg';
-import logoutIcon from '../../assets/logout.svg';
+import { LogoutOutlined, SnippetsOutlined } from '@ant-design/icons';
 import { AuthContext } from '../../contexts/AuthContext';
 
 const NavbarMenu = () => {
@@ -21,7 +20,7 @@ const NavbarMenu = () => {
     <>
       <Navbar expand="lg" bg="primary" variant="dark" className="shadow">
         <Navbar.Brand className="font-weight-bolder text-white">
-          <img src={learnItLogo} alt="learnItLogo" width="32" height="32" className="mr-2" />
+          <SnippetsOutlined />
           Todo app
         </Navbar.Brand>
 
@@ -40,8 +39,7 @@ const NavbarMenu = () => {
               Welcome {username}
             </Nav.Link>
             <Button variant="secondary" className="font-weight-bolder text-white" onClick={logout}>
-              <img src={logoutIcon} alt="logoutIcon" width="32" height="32" className="mr-2" />
-              Logout
+              <LogoutOutlined />
             </Button>
           </Nav>
         </Navbar.Collapse>

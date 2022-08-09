@@ -44,7 +44,7 @@ const AddTaskModal = () => {
           <Form.Group>
             <Form.Control type="text" placeholder="Titke" name="title" required aria-describedby="title-help" value={title} onChange={onChangeNewTaskForm} />
             <Form.Text id="title-help" muted>
-              Required
+              *Required
             </Form.Text>
           </Form.Group>
         </Modal.Body>

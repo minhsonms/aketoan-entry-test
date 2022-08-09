@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 /* eslint-disable no-underscore-dangle */
 import React, { useContext, useEffect } from 'react';
 import Spinner from 'react-bootstrap/Spinner';
@@ -8,13 +9,13 @@ import Toast from 'react-bootstrap/Toast';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Col from 'react-bootstrap/Col';
+import { PlusCircleFilled } from '@ant-design/icons';
 import { TaskContext } from '../contexts/TaskContext';
 import { AuthContext } from '../contexts/AuthContext';
 
 import SingleTask from '../components/tasks/SingleTask';
 import AddTaskModal from '../components/tasks/AddTaskModal';
 import UpdateTaskModal from '../components/tasks/UpdateTaskModal';
-import addIcon from '../assets/plus-circle-fill.svg';
 
 const Dashboard = () => {
   // Contexts
@@ -72,7 +73,7 @@ const Dashboard = () => {
         {/* Open Add Task Modal */}
         <OverlayTrigger placement="left" overlay={<Tooltip>Add a new thing to do</Tooltip>}>
           <Button className="btn-floating" onClick={setShowAddTaskModal.bind(this, true)}>
-            <img src={addIcon} alt="add-task" width="60" height="60" />
+            <PlusCircleFilled />
           </Button>
         </OverlayTrigger>
       </>
