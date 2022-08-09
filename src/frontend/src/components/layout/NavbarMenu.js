@@ -20,7 +20,7 @@ const NavbarMenu = () => {
     <>
       <Navbar expand="lg" bg="primary" variant="dark" className="shadow">
         <Navbar.Brand className="font-weight-bolder text-white">
-          <SnippetsOutlined />
+          <SnippetsOutlined style={{ fontSize: '150%', padding: '10px ' }} />
           Todo app
         </Navbar.Brand>
 
@@ -39,7 +39,7 @@ const NavbarMenu = () => {
               Welcome {username}
             </Nav.Link>
             <Button variant="secondary" className="font-weight-bolder text-white" onClick={logout}>
-              <LogoutOutlined />
+              <LogoutOutlined style={{ fontSize: '150%' }} />
             </Button>
           </Nav>
         </Navbar.Collapse>

@@ -68,7 +68,7 @@ const UpdateTaskModal = () => {
             Cancel
           </Button>
           <Button variant="primary" type="submit">
-            Add!
+            Change!
           </Button>
         </Modal.Footer>
       </Form>

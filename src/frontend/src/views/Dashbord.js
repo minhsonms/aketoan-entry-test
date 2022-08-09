@@ -73,7 +73,7 @@ const Dashboard = () => {
         {/* Open Add Task Modal */}
         <OverlayTrigger placement="left" overlay={<Tooltip>Add a new thing to do</Tooltip>}>
           <Button className="btn-floating">
-            <PlusCircleFilled onClick={setShowAddTaskModal.bind(this, true)} />
+            <PlusCircleFilled onClick={setShowAddTaskModal.bind(this, true)} style={{ fontSize: '350%' }} />
           </Button>
         </OverlayTrigger>
       </>

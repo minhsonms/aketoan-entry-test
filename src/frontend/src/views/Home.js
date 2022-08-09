@@ -1,8 +1,7 @@
-// import Button from 'react-bootstrap/Button';
+import React from 'react';
 import { Button } from 'antd';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import React from 'react';
 
 const Home = () => {
   return (
@@ -11,9 +10,6 @@ const Home = () => {
         <Button type="default" href="https://github.com/minhsonms">
           Visit my github
         </Button>
-        {/* <Button variant="primary" href="https://github.com/minhsonms" size="lg">
-          Visit my github
-        </Button> */}
       </Col>
     </Row>
   );

@@ -7,14 +7,14 @@ import PropTypes from 'prop-types';
 import ActionButtons from './ActionButtons';
 
 const SingleTask = ({ task: { _id, status, title } }) => (
-  <Card className="shadow" border={status === true ? 'success' : 'danger'}>
+  <Card border={status === true ? 'success' : 'danger'}>
     <Card.Body>
       <Card.Title>
         <Row>
-          <Col>
+          <Col variant="primary">
             <p className="post-title">{title}</p>
             <Badge pill variant={status === true ? 'success' : 'danger'}>
-              {status}
+              {status === true ? 'Done' : 'Doing'}
             </Badge>
           </Col>
           <Col className="text-right">
