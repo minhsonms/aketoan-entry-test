@@ -6,7 +6,7 @@ Assignment 1:
 
 1. implement api POST/GET/PUT/DELETE to CRUD doto, using mongodb, mongoosejs as mongo driver(v)
 2. implement web app using ant design and reactjs (v)
-3. implement redux action, reducer to state management
+3. implement redux action, reducer to state management(v)
 4. implement authentication machanism base on JWT. (v)
 5. implement jest to test api. using supertest and mongodb-memory-server to test api
 6. implement snapshot test

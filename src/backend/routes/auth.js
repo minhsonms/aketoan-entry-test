@@ -7,9 +7,8 @@ import verifyToken from '../middleware/auth';
 
 const router = express.Router();
 
-// @route GET api/auth
-// @desc Check if user is logged in
-// @access Public
+// GET api/auth
+// Check if user is logged in
 // eslint-disable-next-line consistent-return
 router.get('/', verifyToken, async (req, res) => {
   try {
@@ -22,9 +21,8 @@ router.get('/', verifyToken, async (req, res) => {
   }
 });
 
-// @route POST api/auth/register
-// @desc Register user
-// @access Public
+// POST api/auth/register
+// Register user
 // eslint-disable-next-line consistent-return
 router.post('/register', async (req, res) => {
   const { username, password } = req.body;
@@ -35,11 +33,6 @@ router.post('/register', async (req, res) => {
   try {
     // Check for existing user
     const user = await User.findOne({ username });
-    //  const mockFindOne = jest.spyOn(user, 'findOne');
-
-    //  mockFindOne.mockImplementation(() => {
-    //   throw new
-    //  })
 
     if (user) return res.status(400).json({ success: false, message: 'Username already taken' });
 
@@ -62,9 +55,8 @@ router.post('/register', async (req, res) => {
   }
 });
 
-// @route POST api/auth/login
-// @desc Login user
-// @access Public
+// POST api/auth/login
+// Login user
 // eslint-disable-next-line consistent-return
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;

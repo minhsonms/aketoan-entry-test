@@ -20,7 +20,7 @@ function App() {
               <Route exact path="/login" render={props => <Auth {...props} authRoute="login" />} />
               <Route exact path="/register" render={props => <Auth {...props} authRoute="register" />} />
               <ProtectedRoute exact path="/home" component={Home} />
-              <ProtectedRoute exact path="/dashboard" component={Dashboard} />
+              <ProtectedRoute path="/dashboard" component={Dashboard} />
             </Switch>
           </Router>
         </TaskContextProvider>

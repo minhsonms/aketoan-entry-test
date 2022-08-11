@@ -4,9 +4,8 @@ import verifyToken from '../middleware/auth';
 
 const router = express.Router();
 
-// @route Get api/tasks
-// @desc get task
-// @access private
+// Get api/tasks
+// get task
 router.get('/', verifyToken, async (req, res) => {
   try {
     const tasks = await Task.find({ user: req.userId }).populate('user', ['password']);
@@ -17,9 +16,8 @@ router.get('/', verifyToken, async (req, res) => {
   }
 });
 
-// @route Post api/task
-// @desc create task
-// @access private
+// Post api/task
+// create task
 // eslint-disable-next-line consistent-return
 router.post('/', verifyToken, async (req, res) => {
   const { title, status } = req.body;
@@ -43,9 +41,8 @@ router.post('/', verifyToken, async (req, res) => {
   }
 });
 
-// @route PUT api/task
-// @desc update task
-// @access private
+// PUT api/task
+// update task
 
 // eslint-disable-next-line consistent-return
 router.put('/:id', verifyToken, async (req, res) => {
@@ -79,9 +76,8 @@ router.put('/:id', verifyToken, async (req, res) => {
   }
 });
 
-// @route Delete api/task
-// @desc delete task
-// @access private
+// Delete api/task
+// delete task
 // eslint-disable-next-line consistent-return
 router.delete('/:id', verifyToken, async (req, res) => {
   try {

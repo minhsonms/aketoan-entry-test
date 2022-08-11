@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import express from 'express';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
@@ -7,7 +8,7 @@ import expressValidator from 'express-validator';
 import cors from 'cors';
 import tasksRouter from './routes/tasks';
 import authRouter from './routes/auth';
-import connection from './db';
+import connection from './database/db';
 import 'dotenv/config';
 import pkg from '../../package.json';
 
@@ -93,7 +94,7 @@ const startServer = async () => {
   });
 
   app.listen(process.env.PORT || 3000, () => {
-    console.info(`App is running at http://localhost:${process.env.PORT || 3000}`);
+    console.log(`App is running at http://localhost:${process.env.PORT || 3000}`);
   });
 };
 
